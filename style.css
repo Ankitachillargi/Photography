@@ -1,0 +1,443 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url('photopix/banner1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav {
+    width: 100%;
+    height: 60px;
+    background-color:black; 
+    align-items: center; 
+    position: fixed;
+    top: 0;
+
+}
+nav .menues{
+    padding-top: 25px;
+    display: flex;
+    color:white;
+    justify-content: space-around;
+    font-family: sans-serif;
+    align-items: center;
+    
+}
+.menues a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+
+}
+.menues a:hover{
+    color: crimson;
+}
+header section{
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: aliceblue;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text h1{
+    padding-top: 20px;
+    font-size: 60px;
+    font-family: 'Updock', cursive;
+    color: rgb(242, 90, 120);
+    transition: 0.8s ease;
+}
+.text button{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid rgb(250, 194, 219);
+    outline: none;
+    color: aliceblue;
+
+}
+.text button:hover{
+    background-color: rgb(242, 90, 120);
+}
+.heading{
+    padding-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+.heading h1{
+    font-family: sans-serif;
+    font-size: 35px;
+    text-shadow: 0 0 5px rgb(40, 40, 40);
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: crimson;
+    
+}
+
+hr{
+    margin-top: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+section .con{
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+.con .left{
+    width: 40%;
+    height: 250px;
+    border-radius: 12px;
+}
+.left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 35px gray;
+}
+.left img:hover{
+    transform: scale(1.1);
+}
+.con .right{
+    width: 60%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.right  .x2 button{
+     width: 150px;
+     height: 30px;
+     outline: none;
+     border: 1px solid black;
+     border-radius: 10px;
+     padding: 10px 20px;
+     background: none;
+     cursor: pointer;
+       
+}
+.right  .x2 button:hover{
+    box-shadow: 0 0 4px rgb(60, 66, 66) , 0 0 5px rgb(60, 66, 66),0 0 9px rgb(60, 66, 66),0 0 8px rgb(60, 66, 66),0 0 5px rgb(60, 66, 66);
+    color: white;
+    background: rgb(246, 143, 164);
+    font-size: 15px;
+    
+}
+.filter-gallery{
+    margin: auto;
+    padding: 70px;
+    width: 100%;
+}
+.portpholio-menu{
+    text-align: center;
+    margin-bottom:20px;
+}
+.portpholio-menu ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+    
+
+}
+.portpholio-menu ul li:hover{
+    color: white;
+    background-color:rgb(246, 139, 139);
+    border-radius: 8px;
+}
+li.active{
+    color: white;
+    background-color:rgb(246, 139, 139);
+    border-radius: 8px;
+
+}
+.portpholio-itm{
+    width: 100%;
+
+}
+.portpholio-itm .item{
+    align-items: center;
+    width: 330px;
+    height: 230px;
+    margin-bottom:20px;
+    margin-right: 20px;
+    float: left;  
+}
+.portpholio-itm .item img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 6px black;
+    transition: 0.2s ease;
+}
+.portpholio-itm .item img:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+
+}
+.cards{
+    margin: auto;
+    padding-top: 50px;
+    display:  flex;
+    gap: 10px;
+
+}
+.card{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(252, 223, 228);
+    padding: 3%;
+    border-radius: 7px;
+}
+.card:hover{
+    background: linear-gradient(90deg,white,black);
+    transform: translateY(-8px);
+}
+.card i{
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+.card h3{
+    font-size: 30px;
+    padding-top: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    
+}
+.card p{
+    padding-top: 4px;
+    font-family: sans-serif;
+}
+.example{
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.firstpart h1{
+    text-align: center;
+    font-size: 60px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+.example .secpart{
+    padding-top: 30px;
+    display:flex;
+    gap: 40px;
+}
+.secpart .p1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: 0.6s ease-in-out;
+
+}
+.secpart .p1:hover{
+    transform: translateY(-18px);
+
+}
+.p1 i{
+    font-size: 50px;
+}
+.p1 h2{
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.secpart .p1:hover{
+    cursor: pointer;
+    
+}
+.Contacts{
+    background-image: linear-gradient(rgba(255,234,232,0.6),rgba(255,234,232,0.6)),url(photopix/p7.jpg);
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+    background-size: cover;
+}
+.Contacts .content1 h1{
+    text-align: center;
+    font-size: 40px;
+}
+.Contacts .content1 h2{
+    font-size: 36px;
+    font-weight: 500;
+    
+}
+.Contacts .content1 p{
+    font-weight: 300;
+    
+}
+.con1{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con1 .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.con1 .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.con1 .contactinfo .box .icon{
+    min-width:60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    
+}
+.con1 .contactinfo .box .text{
+    display: flex;
+    flex-direction: column;
+}
+.con1 .contactinfo .box .text h3{
+    font-size:25px ;
+    font-family: sans-serif;
+}
+.contactform{
+    border-radius: 8px;
+    width: 40%;
+    padding: 40px;
+    background: rgb(250, 250, 250);
+}
+.contactform h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+    background: transparent;
+
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    pad: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5 ease;
+}
+.contactform .inputbox input:focus ~span,
+.contactform .inputbox input:valid ~span,
+.contactform .inputbox textarea:focus ~span,
+.contactform .inputbox textarea:valid ~span{
+    color: rgb(18, 18, 19);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background-color: cadetblue;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+ footer{
+    background-color: rgb(250, 249, 249);
+    gap: 20px;
+ }
+ .foot{
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+ }
+ .foot .socialicons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    color: rgb(14, 14, 14);
+  
+    
+ }
+ .socialicons a{
+    text-decoration: none;
+    border-radius:8px;
+    
+ }
+ .socialicons a i{
+    font-size: 2em;
+    color: rgb(11, 11, 11);
+    opacity: 0.9;
+ }
+ .socialicons a:hover{
+    transform: translatey(-8px)
+    
+ }
+ .bottom p{
+    font-family: sans-serif;
+    font-size: 10px;
+
+ }
+
+
+
+
+
+
